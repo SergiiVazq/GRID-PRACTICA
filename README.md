@@ -41,7 +41,6 @@ Para a construción deste sitio, integráronse diversas fontes de coñecemento:
 2.  **🌐 Documentación Técnica:** Investigación activa sobre estándares do **W3C** para garantir a validación do código.
 3.  **🤖 Asistencia con IA (Gemini):**
     *   Optimización da paleta cromática e contraste accesible.
-    *   Refactorización de selectores CSS mediante *Nesting*.
     *   Resolución de avisos de validación semántica (corrección de seccións sen encabezados).
 
 ---
