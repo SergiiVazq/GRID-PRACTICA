@@ -29,7 +29,7 @@ Este proxecto é un **Moodboard dixital** deseñado para proxectar a miña ident
 ---
 
 ### 📊 Estatísticas de Linguaxes
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SergiiVazq&layout=compact&theme=vision-friendly-dark)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SergiiVazq/GRID-PRACTICA&layout=compact&theme=vision-friendly-dark)
 ---
 
 ## 🎨 Deseño e Estética
