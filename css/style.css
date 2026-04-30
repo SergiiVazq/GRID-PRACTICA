@@ -1,0 +1,191 @@
+/* Variables de estilo: Alto contraste e Naranxa */
+:root {
+    --primary-color: #ff7a00;    
+    --primary-dark: #e66e00;
+    --bg-page: #121212;         /* Fondo escuro para contraste máximo */
+    --card-bg: #ffffff;         /* Cartas brancas */
+    --text-main: #1a1a1a;
+    --text-light: #ffffff;
+    --gap: 20px;
+    --radius: 15px;
+}
+
+/* Configuración global coa fonte Space Grotesk */
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--bg-page);
+    margin: 0;
+    padding: 40px;
+    color: var(--text-light);
+}
+
+/* Header estilizado con Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--primary-color);
+    margin-bottom: var(--gap);
+    padding-bottom: 10px;
+    
+    /* Anidamento 1: Estilo do h1 */
+    & h1 {
+        color: var(--primary-color);
+        margin: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+/* DISTRIBUCIÓN : 4 columnas, 3 filas */
+main {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: /* definimos cada espacio */
+        "intro intro thumb interests"
+        "philo wide wide interests"
+        "lab lab lab lab";
+}
+
+/* Estilo base das tarxetas */
+.card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: var(--radius);
+    color: var(--text-main);
+    transition: all 0.3s ease;
+    overflow: hidden;
+
+    /* Efecto hover interactivo (requisito) */
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(255, 122, 0, 0.4);
+    }
+}
+
+/* Asignación de áreas */
+.intro { 
+    grid-area: intro; 
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    & hr { border: 1px solid rgba(255,255,255,0.3); }
+}
+
+.thumb { grid-area: thumb; padding: 0; }
+
+.interests { grid-area: interests; }
+
+.philosophy { grid-area: philo; }
+
+.wide-img { grid-area: wide; padding: 0; }
+
+.projects { grid-area: lab; }
+
+/* Etiquetas das seccións */
+.label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Control de imaxes */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Anidamiento 2: Lista de intereses */
+.interests {
+    & ul {
+        list-style: none;
+        padding: 0;
+        & li {
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+/* Grid interno do laboratorio: 3 columnas para as caixas naranxas */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* CAIXAS NARANXAS (Cuadrados do laboratorio) */
+.project-box {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: var(--primary-dark);
+        transform: scale(1.02);
+    }
+
+    & h4 { margin: 0 0 10px 0; }
+    & p { font-size: 0.85rem; margin-bottom: 15px; }
+}
+
+/* Imaxe central con borde naranxa */
+.project-image {
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+/* Botóns brancos dentro das caixas naranxas */
+.btn-alt {
+    display: inline-block;
+    padding: 8px 15px;
+    background: white;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.8rem;
+    
+    &:hover {
+        background: #f0f0f0;
+    }
+}
+
+/* Responsive: Tablets */
+@media (max-width: 1000px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "intro intro"
+            "thumb philo"
+            "wide wide"
+            "interests interests"
+            "lab lab";
+    }
+}
+
+/* Responsive: Mobiles */
+@media (max-width: 650px) {
+    body { padding: 15px; }
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "intro" "thumb" "interests" "philo" "wide" "lab";
+    }
+    .projects-grid { grid-template-columns: 1fr; }
+}

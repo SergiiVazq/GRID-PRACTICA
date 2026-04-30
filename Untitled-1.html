@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodboard Sergio - Validado</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SERGIO VÁZQUEZ VARELA</h1>
+        <p>1º DAM // Moodboard Personal</p>
+    </header>
+
+    <main>
+        
+        <!-- Intro: Mantiene <section> porque TIENE un <h2> -->
+        <section class="card intro">
+            <hr>
+            <h2>Levo unha vida moi activa</h2>
+            <p>Son un amante do deporte e a actividade física, gústanme os retos onde teña que pensar e buscar solucións.</p>
+        </section>
+
+        <figure class="card thumb">
+            <img src="img/descarga.jpg" alt="Circuitería técnica">
+        </figure>
+
+        <!-- Intereses: Mantiene <aside> porque TIENE un <h3> -->
+        <aside class="card interests">
+            <span class="label">INTERESES</span>
+            <h3>Detrás do código</h3>
+            <ul>
+                <li><strong>🏀 Baloncesto:</strong> Deporte dende neno.</li>
+                <li><strong>🎵 Música:</strong> Para desconectar.</li>
+                <li><strong>🌊 Socorrista:</strong> O meu verán.</li>
+                <li><strong>💻 Hardware:</strong> Cacharreando sempre.</li>
+            </ul>
+        </aside>
+
+        <!-- CORRECCIÓN 1: De section a div (Philosophy no tiene h2-h6) -->
+        <div class="card philosophy">
+            <span class="label">FILOSOFÍA</span>
+            <blockquote>"El esfuerzo a veces es invisible pero solo tu sabes lo que cuesta."</blockquote>
+        </div>
+
+        <figure class="card wide-img">
+            <img src="img/images2.jpg" alt="Arquitectura moderna">
+        </figure>
+
+        <footer class="card projects">
+            <span class="label">LABORATORIO</span>
+            <h3>Proxectos Persoais</h3>
+            
+            <!-- CORRECCIÓN 2: De section a div (El grid interno es un contenedor) -->
+            <div class="projects-grid">
+                <article class="project-box">
+                    <h4>Repositorio - Github</h4>
+                    <p>Traballos de programación + HTML.</p>
+                    <a href="https://github.com/SergiiVazq" class="btn-alt">Github</a>
+                </article>
+
+                <figure class="project-image">
+                    <img src="img/descarga.png" alt="Imaxe de traballo">
+                </figure>
+
+                <article class="project-box">
+                    <h4>Stats Basket:</h4>
+                    <p>Clasificacións BC.</p>
+                    <a href="https://fegaba.com/es/resultados-y-clasificaciones/" class="btn-alt">Explorar</a>
+                </article>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
