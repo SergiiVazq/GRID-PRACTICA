@@ -20,6 +20,16 @@ Este proxecto é un **Moodboard dixital** deseñado para proxectar a miña ident
 *   **CSS Nesting:** Implementación de anidamento moderno para un código máis limpo e mantenible.
 *   **Google Fonts:** Integración da tipografía *Space Grotesk*.
 
+## 🛠️ Tecnoloxías Utilizadas
+
+| HTML5 | CSS3 | Layout | Flexbox |
+| :--- | :--- | :--- | :--- |
+| ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) | ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) | ![Layout](https://img.shields.io/badge/Layout-grey?style=for-the-badge) | ![Flexbox](https://img.shields.io/badge/Flexbox-%239b30ff?style=for-the-badge) |
+
+---
+
+### 📊 Estatísticas de Linguaxes
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SergiiVazq&layout=compact&theme=vision-friendly-dark)
 ---
 
 ## 🎨 Deseño e Estética
