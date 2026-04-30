@@ -1,4 +1,4 @@
-# 🚀 Moodboard Personal: Space Edition
+# 🚀 Moodboard Personal
 **Desarrollado por:** Sergio Vázquez Varela  
 **Curso:** 1º DAM (Desenvolvemento de Aplicacións Multiplataforma)
 
